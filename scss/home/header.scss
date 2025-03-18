@@ -1,0 +1,33 @@
+header{
+    background-color: rgba(0, 0, 0, 0.199);
+    .head{
+        .menu{
+            .menu-lista{
+                border-bottom: 2px solid rgba(255, 255, 255, 0.438);
+                text-align: center;
+                .menu-links{
+                    display: inline-block;
+                    list-style: none;
+                    &:hover{
+                                
+                                border-left:2px solid rgba(255, 255, 255, 0.514) ;
+                                border-right: 2px solid rgba(255, 255, 255, 0.514);
+                                scale: 0.9;
+                                transition: 0.5s;
+                            }
+                        a{
+                            font-family: Marcellus SC,Arial, Helvetica, sans-serif;
+                            font-size: 1.4em;
+                            color: white;
+                            text-decoration: none;
+                            margin: 0px 24px;
+                            padding: 8px;
+                            
+                            
+                        }
+                    
+                }
+            }
+        }
+    }
+}

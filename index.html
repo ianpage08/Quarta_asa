@@ -1,16 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lib/bootstrap-css.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus+SC&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quintessential&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Quarta Asa</title>
 </head>
 <body>
-    <div id="fundo"></div>
-    <main>
+    
+    <header>
+        <div class="container d-flex justify-content-between align-items-center head">
+            <div class="logo"><img src="imagens/logo.svg" alt=""></div>
+            <div class="menu-hamburguer">
+                <div class="linha-menu"></div>
+                <div class="linha-menu"></div>
+                <div class="linha-menu"></div>
+            </div>
+            <nav class="menu">
+                <ul class="menu-lista">
+                    <li class="menu-links"><a href="#home">Home</a></li>
+                    <li class="menu-links"><a href="#">Sinopse</a></li>
+                    <li class="menu-links"><a href="#home">Mundo</a></li>
+                    <li class="menu-links"><a href="#">Personagens</a></li>
+                    <li class="menu-links"><a href="#">Galeria</a></li>
+                    <li class="menu-links"><a href="#">Teorias</a></li>
+                    
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="home">
+        <section id="fundo-home">
+            <div id="fundo">
+                <div>
 
+                </div>
+            </div>
+        </section> 
+        <section class="conteudo-home">
+            <div class="container">
+                <div class="display">
+                    <div class="conteudo">
+                        <div class="d-flex justify-content-center align-items-center"><img src="imagens/linha ornamnetal.png" alt=""></div>
+                        <h1>Quarta Asa</h1>
+                        <p>Quarta Asa" é um portal para um mundo onde o céu é palco de batalhas épicas e a terra esconde segredos ancestrais. Imagine um reino onde a elite forja laços com dragões, criaturas majestosas e perigosas, para se tornarem cavaleiros. Mas nem tudo é glória e honra</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <section id="livros">
+                <div class="container">
+                    <div class="row livros-display">
+                        <div class="col-md-4 itens-livros">
+                            <img src="https://placehold.co/200x300" alt="">
+                            <h2>Quarta Asa</h2>
+                        </div>
+                        <div class="col-md-4 itens-livros">
+                            <img src="https://placehold.co/200x300" alt="">
+                            <h2>Chama de Ferro</h2>
+                        </div>
+                        <div class="col-md-4 itens-livros">
+                            <img src="https://placehold.co/200x300" alt="">
+                            <h2>Tempestade de Onix</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
     </main>
     
     <script src="lib/bootstrap.bundle-js.min.js"></script>

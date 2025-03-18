@@ -1,7 +1,18 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
+/* Error: Expected expression.
+ *    ,
+ * 10 |                 font-family: ;
+ *    |                              ^
+ *    '
+ *   scss\home\livros.scss 10:30  @use
+ *   scss\main.scss 5:1           root stylesheet */
 
-/*# sourceMappingURL=main.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a    \2577 \a 10 \2502                  font-family: ;\d\a    \2502                               ^\a    \2575 \a   scss\\home\\livros.scss 10:30  @use\a   scss\\main.scss 5:1           root stylesheet";
+}
