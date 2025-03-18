@@ -1,18 +1,98 @@
-/* Error: Expected expression.
- *    ,
- * 10 |                 font-family: ;
- *    |                              ^
- *    '
- *   scss\home\livros.scss 10:30  @use
- *   scss\main.scss 5:1           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a    \2577 \a 10 \2502                  font-family: ;\d\a    \2502                               ^\a    \2575 \a   scss\\home\\livros.scss 10:30  @use\a   scss\\main.scss 5:1           root stylesheet";
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: black;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.199);
+}
+header .head .menu .menu-lista {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.438);
+  text-align: center;
+}
+header .head .menu .menu-lista .menu-links {
+  display: inline-block;
+  list-style: none;
+}
+header .head .menu .menu-lista .menu-links:hover {
+  border-left: 2px solid rgba(255, 255, 255, 0.514);
+  border-right: 2px solid rgba(255, 255, 255, 0.514);
+  scale: 0.9;
+  transition: 0.5s;
+}
+header .head .menu .menu-lista .menu-links a {
+  font-family: Marcellus SC, Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  color: white;
+  text-decoration: none;
+  margin: 0px 24px;
+  padding: 8px;
+}
+
+#home #fundo-home {
+  height: 100%;
+  max-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+}
+#home #fundo-home #fundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagens/fundo-teste1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+#home #fundo-home #fundo div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+}
+
+.conteudo-home .container {
+  margin-top: 50px;
+}
+.conteudo-home .container .display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.conteudo-home .container .display .conteudo {
+  text-align: justify;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1.2em;
+  padding: 16px;
+  width: 500px;
+}
+.conteudo-home .container .display .conteudo img {
+  width: 300px;
+}
+.conteudo-home .container .display .conteudo h1 {
+  text-align: center;
+  font-family: Bonheur Royale, cursive, Arial, Helvetica, sans-serif;
+  font-size: 5em;
+}
+
+#livros {
+  background-color: black;
+}
+#livros .livros-display .itens-livros {
+  text-align: center;
+  font-size: 1em;
+}
+#livros .livros-display .itens-livros h2 {
+  color: white;
+  font-family: Marcellus SC, Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
