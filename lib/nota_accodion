@@ -1,0 +1,14 @@
+/*btnAccordion.forEach((botao, conteudo) => {
+        botao.addEventListener('click',function(){
+
+                btnAccordion.forEach(btn => btn.classList.remove('active'))
+                conteudoFaq.forEach(faq => faq.classList.remove('active'))
+                conteudoFaq[conteudo].classList.add('active')
+                botao.classList.add('active')
+                console.log('ativo')
+            })
+        
+    })
+     tava somente abrindo, mas não fechado. tenho que lembrar que posso colocar if or else quando essas coisas aconteces
+     
+    */
