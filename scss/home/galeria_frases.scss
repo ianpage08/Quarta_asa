@@ -1,0 +1,87 @@
+.box-perguntas{
+    margin: 200px 0px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    .item-pergunta{
+        position: absolute;
+        top: calc(50% - 225px);
+        left: calc(50% - 175px);
+        width: 350px;
+        height: 450px;
+        transform-style: preserve-3d;
+        user-select: none;
+        transition: 0.5s;
+        
+        &:nth-child(1){
+            transform: translate3D(-250px, 0, 0) scale(0.8) rotateY(18deg) ;
+            z-index: 0;
+        }
+        &:nth-child(2){
+            transform: translate3D(-250px, 0, 0) scale(0.8) rotateY(18deg) ;
+            z-index: 1;
+        }
+        &:nth-child(3){
+            transform: translate3D(-200px, 0, 0) scale(0.9) rotateY(15deg) ;
+            z-index: 6;
+        }
+        &:nth-child(4){
+            transform: translate3D(0, 0, 0) scale(1) rotateY(0deg) ;
+            z-index: 4;
+        }
+        &:nth-child(5){
+            transform: translate3D(250px, 0, 0) scale(0.9) rotateY(-15deg) ;
+            z-index: 3;
+        }
+        &:nth-child(6){
+            transform: translate3D(350px, 0, 0) scale(0.8) rotateY(-18deg) ;
+            z-index: 3;
+        }
+        &:nth-child(7){
+            transform: translate3D(350px, 0, 0) scale(0.8) rotateY(-18deg) ;
+            z-index: -1;
+        }
+    }
+}
+.btn{
+        
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+
+    .btn-prev, .btn-next{
+        position: relative;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 1px solid white;
+        opacity: 0.8;
+        transition: 0.5s;
+        &:hover{
+            opacity: 1;
+            scale: 0.9;
+        }
+        &::before{
+            content: "";
+            width: 10px;
+            top: 19px;
+            left:20px;
+            position: absolute;
+            height: 10px;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            rotate: -45deg;
+        }
+        &:last-child{
+            &::before{
+                transform: rotate(180deg);
+            }
+        }
+    }
+        
+    
+}
