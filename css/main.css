@@ -84,7 +84,11 @@ header .head .menu .menu-lista .menu-links a {
 }
 
 #livros {
+  margin-top: 24px;
   background-color: black;
+}
+#livros .livros-display {
+  padding-top: 32px;
 }
 #livros .livros-display .itens-livros {
   text-align: center;
@@ -93,6 +97,32 @@ header .head .menu .menu-lista .menu-links a {
 #livros .livros-display .itens-livros h2 {
   color: white;
   font-family: Marcellus SC, Arial, Helvetica, sans-serif;
+}
+
+.dragao-container {
+  width: 300px;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+.dragao-container .dragao {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dragao-container .asa-esquerda {
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  transform-origin: bottom right;
+}
+.dragao-container .asa-direita {
+  position: absolute;
+  top: 24px;
+  left: 0px;
+  transform-origin: bottom left;
 }
 
 /*# sourceMappingURL=main.css.map */

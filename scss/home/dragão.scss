@@ -1,0 +1,27 @@
+.dragao-container{
+    
+    width: 300px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    margin:  auto;
+    .dragao{
+        
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .asa-esquerda{
+        position: absolute;
+        top: 22px;
+        left: 0px;
+        transform-origin: bottom right;
+    }
+    .asa-direita{
+        position: absolute;
+        top: 24px;
+        left: 0px;
+        transform-origin: bottom left ;
+    }
+}
