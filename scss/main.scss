@@ -1,4 +1,5 @@
 @use 'config/global.scss';
+@use 'config/reutilizaveis.scss';
 @use 'home/header.scss';
 @use 'home/fundo.scss';
 @use 'home/conteudo.scss';
@@ -7,4 +8,7 @@
 @use 'home/card_frases.scss';
 @use 'home/galeria_frases.scss';
 @use 'sinopse/fundo-sinopse.scss';
-@use 'sinopse/sinopse.scss'
+@use 'sinopse/sinopse.scss';
+@use 'mundo/fundo-mundo-mapa.scss';
+@use 'mundo/mapa.scss';
+@use 'mundo/locais.scss';
