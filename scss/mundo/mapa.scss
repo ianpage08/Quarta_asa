@@ -20,14 +20,37 @@
     }
 }
 
-.menu-mundo{
+.lista-principal{
+    color: white;
+    cursor: pointer;
+    list-style: none;
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid white;
+    overflow: hidden;
+
+    a{
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
     li{
+        display: inline-block;
+        padding: 8px;
+    }
+    .sublista{
         display: none;
-        
-        a{
-            &:hover{
-            display: block;
-        }
-        }
+        position: absolute;
     }
 }
+.lista-principal li:hover >  .sublista{
+    display: block;
+    li{
+        display: block;
+    }
+}
+
+
+
+

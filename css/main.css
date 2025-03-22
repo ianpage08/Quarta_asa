@@ -350,10 +350,34 @@ header .head .menu .menu-lista .menu-links a {
   width: 60%;
 }
 
-.menu-mundo li {
-  display: none;
+.lista-principal {
+  color: white;
+  cursor: pointer;
+  list-style: none;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 8px;
+  border: 1px solid white;
+  overflow: hidden;
 }
-.menu-mundo li a:hover {
+.lista-principal a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+.lista-principal li {
+  display: inline-block;
+  padding: 8px;
+}
+.lista-principal .sublista {
+  display: none;
+  position: absolute;
+}
+
+.lista-principal li:hover > .sublista {
+  display: block;
+}
+.lista-principal li:hover > .sublista li {
   display: block;
 }
 
